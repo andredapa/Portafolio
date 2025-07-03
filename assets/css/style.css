@@ -49,13 +49,14 @@ html, body {
     padding: 20px;
     align-content: center;
     border-radius: 10%;
-    position: fixed;
+    position: fixed; 
+    top: 50px;
 }
 .presentacion img{  
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    margin-top: -30px;   
+    margin-top: -50px;   
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -69,33 +70,34 @@ html, body {
 .conocimientos{
     background-color: white;
     width: 50%;
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 45px;
+    margin-left: 620px;
     padding: 20px;
     align-content: center;
     border-radius: 10%;
-    position: fixed;
+    position: relative;
     right: 100px;
+    height: 900px;
 }
 #slider{
     margin: 0 auto;
-    width: 800px;
-    height: 500px;
+    width: 500px;
+    height:auto;
     overflow:hidden;
     background-color: black;
 }
-/*Valores de las imagenes*/
+
 #slider img{
     margin: 0 auto;
     -moz-transition: opacity 2s;
     -webkit-transition: opacity 2s;
     transition: opacity 2s;
-    width: 800px;
-    height: 500px;
+    width: 500px;
+    height:auto;
     position: absolute;
     opacity: 0;
 }
-/*Para que la primera imagen este activa al inicio*/
+
 #slider img:nth-child(1){
     opacity: 1;
 }
@@ -115,7 +117,15 @@ table{
 #derecha{
     text-align: left;
 }
-.front{
-    width: 45px;
-    height: auto;
+.front img ,.back img{
+    width: 80px;
+    height: 80px;
+}
+button{
+    background-color: #5E17EB;
+    color: white
+}
+button:hover{
+    background-color: rgb(255, 0, 234);
+
 }
